@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 import {
   FaDownload,
   FaGithub,
@@ -30,6 +31,11 @@ const About = () => {
           {intro} <span className="my-name">{name}</span>
         </h1>
         <p>{description}</p>
+        <div className="cta-container">
+          <Button variant="primary" className="cta">
+            Learn More
+          </Button>
+        </div>
       </div>
 
       <Card className="profile">

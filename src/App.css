@@ -26,3 +26,30 @@ main {
   width: 95%;
   margin: 0 auto;
 }
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta {
+  background-color: var(--primary-color);
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 900;
+  font-size: large;
+  border: 1px solid black;
+}
+
+.cta:hover {
+  background-color: #fc88b7;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .cta {
+    font-size: 0.5rem;
+  }
+}

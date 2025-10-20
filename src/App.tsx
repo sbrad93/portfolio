@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 import Navbar from "./components/Navbar/Navbar";
+
 const App = () => {
   const [theme, setTheme] = useState("light");
 
@@ -27,6 +29,7 @@ const App = () => {
       <main>
         <Navbar toggleTheme={toggleTheme} theme={theme} />
         <About />
+        <Experience />
       </main>
     </div>
   );
